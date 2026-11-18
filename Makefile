@@ -7,6 +7,7 @@ APPLICATION_NAME := TestBrowser
 TestBrowser_FILES := main.m AppDelegate.m BrowserViewController.m
 TestBrowser_FRAMEWORKS := UIKit WebKit
 TestBrowser_CFLAGS := -fobjc-arc
+TestBrowser_INFOPLIST := Resources/Info.plist
 TestBrowser_INSTALL_PATH := /Applications
 
 include $(THEOS_MAKE_PATH)/application.mk
