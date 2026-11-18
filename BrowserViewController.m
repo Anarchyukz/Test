@@ -49,9 +49,8 @@
     self.webView.allowsBackForwardNavigationGestures = YES;
     [self.view addSubview:self.webView];
 
-    UILayoutGuide *safe = self.view.safeAreaLayoutGuide;
     [NSLayoutConstraint activateConstraints:@[
-        [toolbar.topAnchor constraintEqualToAnchor:safe.topAnchor],
+        [toolbar.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor],
         [toolbar.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
         [toolbar.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
         [toolbar.heightAnchor constraintEqualToConstant:52.0],
